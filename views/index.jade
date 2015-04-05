@@ -1,0 +1,65 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to UniEat. UniEat allows you to scan in an item of food, dusty or not, and it will recommend a meal (hopefully).
+
+    // Wrapper
+    #wrapper
+        // FOOD LIST
+        h2 Food List
+        #foodList
+            table
+                thead
+                    th Name
+                    th Delete?
+                tbody
+        // /FOOD LIST
+
+        // ADD Food
+        h2 Add Food
+        #addFood
+            fieldset
+                input#inputFoodName(type='text', placeholder='Food name')
+                input#inputFoodQuantity(type='text', placeholder='grams or number of')
+                br
+                button#btnAddFood Add Food
+        // /ADD FOOD
+              // RECIPE LIST
+        h2 Ingredient List
+        #foodInfo
+            // RECIPE LIST
+            h2 Recipe List
+            #recipeList
+                table
+                    thead
+                        th Pic
+                        th Title
+                    tbody
+            // /FOOD LIST
+        // /WRAPPER
+
+
+
+
+
+
+
+
+
+
+
+        #ingredientList
+            table
+                thead
+                    th ingredient
+                tbody
+        // /FOOD LIST
+
+
+
+
+
+
+
+

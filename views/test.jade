@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    h1= title
+    p welcome to test page
+
+    // Wrapper
+    #wrapper
+        //Find Recipe
+        #foodInfo
+        h2 Recipe
+        button#btnFindRecipe Find Recipe
+        br
+        br
+        // FOOD LIST
+        h2 Food List
+        #foodList
+            table
+                thead
+                    th Name
+                    th Quantity
+                    th Delete?
+                tbody
+        // /FOOD LIST
+
+        // ADD Food
+        h2 Add Food
+        #addFood
+            fieldset
+                input#inputFoodName(type='text', placeholder='Food name')
+                input#inputFoodQuantity(type='text', placeholder='grams or number of')
+                br
+                button#btnAddFood Add Food
+        // /ADD FOOD
+
+    // /WRAPPER
